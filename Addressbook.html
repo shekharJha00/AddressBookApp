@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Book Form</title>
+    <link rel="stylesheet" href="/Css/Addressbook.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <header class="header header-content">
+        <div class="logo-content">
+            <img src="/Assets/logo.jpg" alt="logo">
+            <div>
+                <span class="address-text">ADDRESS</span><br>
+                <span class="address-text address-book">Book</span>
+            </div>
+        </div>
+    </header>
+    <div class="form-content">
+        <form action="#" class="form" onsubmit="save()" onreset="reset()">
+            <div class="form-head">
+                <h3 class="head-text">PERSON ADDRESS FORM</h3>
+                <div class="cancel-button">
+                    <a href="/AdressBookHome.html">X</a>
+                </div>
+            </div>
+            <div class="form-body">
+                <div class="row-content">
+                    <label for="name" class="label text"> Full Name </label>
+                    <input type="text" class="input" id="name" name="name" placeholder="Enter Your Full Name" required>
+                    <error-output for="text" class="name-error"></error-output>
+                </div>
+                <div class="row-content">
+                    <label for="address" class="text"> Address </label>
+                    <textarea name="address" id="address" cols="80" rows="6" placeholder="Enter Your Address" required></textarea>
+                </div>
+                <div class="row-content inner-rows">
+                    <div class="columns-content">
+                        <label for="city" class="label text">City</label>
+                        <select name="city" id="city" class="input">
+                            <option value="">Select City</option>
+                            <option value="Ranchi">Ranchi</option>
+                            <option value="Banglore">Banglore</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Hyedrabad">Hyedrabad</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Raipur">Raipur</option>
+                        </select>
+                    </div>
+                    <div class="columns-content">
+                        <label for="state" class="text label">State</label>
+                        <select name="state" id="state" class="input">
+                            <option value="">Select State</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="West Bengal">West Bengal</option>
+                        </select>
+                    </div>
+                    <div class="columns-content">
+                        <label for="zip-code" class="text label">Zip</label>
+                        <input type="tel" class="input" id="zip-code" name="zip-code" maxlength="999999" placeholder="Enter Your Zip Code">
+                    </div>
+                </div>
+                <div class="row-content">
+                    <label for="phone-number" class="label text">Phone Number</label>
+                    <input type="tel" class="input" id="phone-number" name="phone-number" placeholder="Enter Your Phone Number" required>
+                    <error-output for="phone-number" class="number-error"></error-output>
+                </div>
+                <div class="buttonParent">
+                    <div class="submit-reset">
+                        <button type="submit" class="submitButton button" id="submitButton">Add</button>
+                        <button type="reset" class="resetButton button">Reset</button>
+                    </div>
+                </div>                    
+            </div>
+        </form>
+    </div>
+    <script defer src="/JS/Addressbook.js"></script>
+    <script defer src="/JS/AddressbookData.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Book</title>
+    <link rel="stylesheet" href="/Css/AddressBookHome.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="/Assets/logo.jpg" alt="address book logo">
+            <div>
+                <span class="address-text">ADDRESS</span><br>
+                <span class="address-text address-book">BOOK</span>
+             </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="form-header-content">
+            <div class="person-detail-text">
+                Person Details
+            </div>
+            <div class="header-button">
+                <a href="/Addressbook.html" class="add-button">+ Add Person</a>
+            </div>            
+        </div>
+        <table id="table-display" class="table">
+            <tr>
+                <th></th>
+                <th>Full Name</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip Code</th>
+                <th>Phone Number</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Shekhar</td>
+                <td>Jha</td>
+                <td>Ranchi</td>
+                <td>Jharkhand</td>
+                <td>834010</td>
+                <td>+918347820340</td>
+                <td>
+                    <img id="1" onclick="remove(this)" src="/Assets/delete.png" alt="delete">
+                    <img id="1" onclick="update(this)" src="/Assets/edit.png" alt="edit">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script defer src="/Js/AddressBookHome.js"></script>
+</body>
+</html>
